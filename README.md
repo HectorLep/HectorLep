@@ -44,7 +44,8 @@
 
 | Snake Eating Contributions |
 | -------------------------- |
-| ![snake gif](https://github.com/HectorLep/HectorLep/blob/output/github-contribution-grid-snake.svg) |
+| ![snake gif](https://raw.githubusercontent.com/HectorLep/HectorLep/output/github-contribution-grid-snake.svg) |
+
 
 ---
 
