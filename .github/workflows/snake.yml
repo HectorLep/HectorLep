@@ -28,6 +28,11 @@ jobs:
           ls -la dist/
           cat dist/github-contribution-grid-snake.svg || echo "SVG file not found"
 
+      - name: Set Git config
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Deploy to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
