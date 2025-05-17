@@ -3,31 +3,34 @@ name: Generate Snake Contribution Grid
 on:
   schedule:
     - cron: "0 0 * * *"  # Ejecuta todos los días a medianoche
-  workflow_dispatch:
+  workflow_dispatch:  # Permite ejecución manual
 
 jobs:
-  build:
+  generate-snake:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Usamos la versión más reciente
 
       - name: Create dist directory
-        run: mkdir -p dist
+        run: mkdir -p dist  # Aseguramos que el directorio dist exista
 
-      - name: Generate Snake
-        uses: platane/snk/svg-only@v3
+      - name: Generate Snake SVG
+        uses: platane/snk/svg-only@v3  # Usamos la variante svg-only para generar solo SVG
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          outputs: dist/github-contribution-grid-snake.svg
+          outputs: dist/github-contribution-grid-snake.svg  # Especificamos la salida
 
       - name: Verify generated files
-        run: ls -la dist/
+        run: |
+          ls -la dist/
+          cat dist/github-contribution-grid-snake.svg || echo "SVG file not found"
 
       - name: Deploy to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@v4  # Usamos la versión más reciente
         with:
           target_branch: output
           build_dir: dist
+          keep_history: false  # Simplifica el historial de la rama output
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
