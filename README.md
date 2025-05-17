@@ -24,12 +24,16 @@
 **Lenguajes y herramientas** 
 <br>
 <br>
-<img src="https://skillicons.dev/icons?i=python,html,css,js,vscode,bash,github" />
+<img src="https://skillicons.dev/icons?i=python,html,css,js,vscode,bash,github,ps" />
 
 **Sistemas operativos**  
 <br>
 <img src="https://skillicons.dev/icons?i=windows,linux,ubuntu" />
+<br><br>
 
+**Bases de datos**
+<br>
+<img src="https://skillicons.dev/icons?i=sqlite,mysql" />
 </div>
 
 ---
