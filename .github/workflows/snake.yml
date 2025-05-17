@@ -18,8 +18,10 @@ jobs:
       - name: Generate Snake SVG
         uses: platane/snk/svg-only@v3  # Usamos la variante svg-only para generar solo SVG
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_user_name: HectorLep  # 👈 ESTE es el campo que te faltaba
           outputs: dist/github-contribution-grid-snake.svg  # Especificamos la salida
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Verify generated files
         run: |
