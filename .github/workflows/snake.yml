@@ -35,4 +35,4 @@ jobs:
           build_dir: dist
           keep_history: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # ✅ DEBE IR AQUÍ
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
