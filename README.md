@@ -42,8 +42,8 @@
 
 ### 🐍 Actividad del último año
 
-| Snake Eating Contributions in the last year |
-| ------------------------------------------ |
+| Snake Eating Contributions |
+| -------------------------- |
 | ![snake gif](https://github.com/HectorLep/HectorLep/blob/output/github-contribution-grid-snake.svg) |
 
 ---
