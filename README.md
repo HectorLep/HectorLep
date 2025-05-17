@@ -72,7 +72,8 @@
 
 | Redes |
 | ----- |
-| <a href="https://discord.com/users/729473858179956859"><img src="https://skillicons.dev/icons?i=discord"/></a> |
+| <a href="https://discord.com/users/799142517400141854"><img src="https://skillicons.dev/icons?i=discord" /></a> |
+
 
 </div>
 
