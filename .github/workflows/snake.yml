@@ -40,4 +40,5 @@ jobs:
           build_dir: dist
           keep_history: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # 👈 este es el secreto que acabas de crear
+
